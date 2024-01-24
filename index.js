@@ -136,9 +136,9 @@ const fundedBtn = document.getElementById("funded-btn");
 const allBtn = document.getElementById("all-btn");
 
 // add event listeners with the correct functions to each button
-unfundedBtn.addEventListener("click", filterUnfundedOnly);
-fundedBtn.addEventListener("click", filterFundedOnly);
-allBtn.addEventListener("click",showAllGames);
+unfundedBtn.addEventListener("mouseover", filterUnfundedOnly);
+fundedBtn.addEventListener("mouseover", filterFundedOnly);
+allBtn.addEventListener("mouseover",showAllGames);
 
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
