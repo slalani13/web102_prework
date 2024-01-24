@@ -21,6 +21,11 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+
 }
 
 .stats-card {
@@ -33,8 +38,10 @@ body {
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 25px;
 }
+
+
 
 #games-container {
     display: flex;
@@ -64,6 +71,12 @@ body {
 
 #button-container {
     text-align: center;
+    /* box-shadow: 0 0 15px green; */
+}
+
+#unfunded-btn, #all-btn, #funded-btn, :hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px purple;
 }
 
 button {
