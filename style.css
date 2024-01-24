@@ -62,21 +62,21 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    transition: 0.3s ease;
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.2);
 }
 
 #button-container {
     text-align: center;
-    /* box-shadow: 0 0 15px green; */
 }
 
 #unfunded-btn, #all-btn, #funded-btn, :hover {
     cursor: pointer;
-    box-shadow: 0 0 15px purple;
 }
 
 button {

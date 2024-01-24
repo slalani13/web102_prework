@@ -41,11 +41,15 @@ function addGamesToPage(games) {
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
 
+        const moneyNeeded = game.goal - game.pledged;
+
         gameCard.innerHTML = `
         <img src= "${game.img}" alt="${game.name}" class="game-img">
         <h1>${game.name}</h1>
         <p>Description: ${game.description}</p>
         <p>Goal: ${game.goal}</p>
+        <p>Pleged: ${game.pledged}</p>
+        <p>${moneyNeeded > 0 ? `Looking for funds $${moneyNeeded} :)` : 'Funding goal achieved!'}</p>
         `;
         // append the game to the games-container
         gamesContainer.appendChild(gameCard);
